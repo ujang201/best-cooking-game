@@ -1,0 +1,24 @@
+Build the best cooking game you can for the make.fun bounty
+"best-cooking-game-20261125-0137": a complete, original, playable kitchen
+game in plain static files under game/ (no build step, no network request).
+
+Game: "Sizzle & Serve". The lunch rush is on: order tickets arrive on the
+order board with a countdown, and the player builds each dish on the plate
+from eight ingredient bins on the counter. Patties must be grilled (4s) and
+dough baked in the oven (5s) before they can go on the plate. Serve the
+exact dish an order asks for (Space or the SERVE button) to score points,
+coins and a combo bonus; a wrong dish or an expired order costs one of
+three lives. A 2-minute shift, then the game-over screen with the score,
+dishes served and best combo, and a restart.
+
+Controls: mouse + keyboard (keys 1-8 pick ingredients, Space serves,
+T trashes the plate, M mutes, Enter starts, R restarts). Sounds and a
+cheerful music loop are synthesized live with WebAudio — no audio files.
+
+Screenshots: the game supports ?shot=start|play|end&seed=N, which stages
+deterministic states (title, mid-shift with a dish half-built on the plate,
+game over) so its maker can capture real renders of the game's own code.
+
+Entry: game/ (index.html + src/*.js, no libraries), screenshots/ (3 JPEGs),
+main.ts hands game/ and screenshots/ to /output with a dossier built by
+vendor/makefun-game.ts. Original idea, art, sounds, music and names.
